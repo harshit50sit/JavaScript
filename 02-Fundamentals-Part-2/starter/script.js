@@ -10,3 +10,35 @@ if(hasDriversLicense) console.log("I can drive :D")
 //const private = 534;
 
 //Functions---
+function logger() {
+    console.log("My name is Harshit");
+}
+//calling / running / invoking function
+logger();
+logger();
+
+function fruitProcessor(apples, oranges) {
+    console.log(apples,oranges);
+    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+    return juice;
+}
+
+console.log(fruitProcessor(5,0));
+//or
+const appleJuice = fruitProcessor(10,20);
+console.log(appleJuice);
+const num = Number('23');
+
+function calAge1(birthYear) {
+    return 2021 - birthYear;
+}
+console.log(calAge1(1997));
+//Function vs Expression function
+
+const calcAge2 = function (birthYear) {
+    return 2021 - birthYear;
+}
+
+console.log(calcAge2(1997));
+
+//Arrow Functions
