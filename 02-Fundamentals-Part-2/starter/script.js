@@ -42,3 +42,19 @@ const calcAge2 = function (birthYear) {
 console.log(calcAge2(1997));
 
 //Arrow Functions
+console.log('Arrow functions--');
+//return works implicitly.note-birthYear is a parameter and calcAge3 is a function name
+const calcAge3 = birthYear => 2020 - birthYear;
+const age3 = calcAge3(1996);
+console.log(`current age is ${age3}`);
+
+//more parameters
+const yearsUntilsRetirement = (birthYear,firstName) => {
+    const age = 2021 - birthYear;
+    const retirement = 60 - age;
+    //return retirement;
+    return `${firstName} retires in ${retirement}`;
+}
+
+//console.log(`Harshit age left for the retirment is ${yearsUntilsRetirement(1997)}`);
+console.log(yearsUntilsRetirement(1997,'Harshit'));
