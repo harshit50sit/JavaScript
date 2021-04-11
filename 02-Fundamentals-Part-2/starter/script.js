@@ -58,3 +58,22 @@ const yearsUntilsRetirement = (birthYear,firstName) => {
 
 //console.log(`Harshit age left for the retirment is ${yearsUntilsRetirement(1997)}`);
 console.log(yearsUntilsRetirement(1997,'Harshit'));
+
+//Introduction arrays
+const friend1 = 'Prabhat';
+const friend2 = 'Rahul';
+const friend3 = 'asdf';
+
+const friends = ['Prabhat', 'Harshit' ,'Rahul'];
+console.log(friends);
+
+const years = new Array(1991,2002,2021);
+console.log(years);
+console.log(friends.length);
+
+//Here array is not a primitive type so it can mutate.
+friends[2] = 'jay';
+console.log(friends);
+//Hold different types of values
+const harshit = ['Harhit','Verma', 2021 - 1998];
+console.log(harshit);
